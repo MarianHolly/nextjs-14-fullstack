@@ -1,12 +1,8 @@
 import Form from "@/components/form";
-import { redirect } from "next/navigation";
-import { LogoutLink, getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
+import { LogoutLink } from "@kinde-oss/kinde-auth-nextjs/server";
 
-export default function CreatePost() {
-  // authnetication - first option
-  // const { isAuthenticated } = getKindeServerSession();
-  // if (!(await isAuthenticated())) {
-  //  redirect("api/auth/login?post_login_redirect_url=/create-post")}
+export default async function CreatePost() {
+
 
   return (
     <main className="text-center pt-16">
