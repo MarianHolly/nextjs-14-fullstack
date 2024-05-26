@@ -8,7 +8,6 @@ export default async function PostsList() {
   await new Promise((resolve) => setTimeout(resolve, 1000));
   const posts = await prisma.post.findMany()
 
-
   return (
     <ul>
       {posts.map((post) => (
